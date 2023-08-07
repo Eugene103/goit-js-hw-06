@@ -1,4 +1,4 @@
-const widget = document.querySelector(`.widget`)
+const widget = document.body
 const nameColor = document.querySelector(`.color`)
 const btnColor = document.querySelector(`.change-color`)
 
@@ -8,10 +8,13 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
+
 btnColor.addEventListener(`click`, changeColor)
 
 function changeColor(evt) {
-  widget.style.backgroundColor = getRandomHexColor();
-  nameColor.textContent = getRandomHexColor()
+let randomColor = getRandomHexColor();
+  widget.style.backgroundColor = randomColor;
+  nameColor.textContent = randomColor;
+  console.log(randomColor)
   
 }

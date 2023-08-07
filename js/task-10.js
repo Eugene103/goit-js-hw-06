@@ -19,8 +19,8 @@ function createBoxes(amaunt) {
     const size = 20 + i * 10;
     div.push(`<div style="width: ${size}px; height: ${size}px; background:${getRandomHexColor()}; "></div>`)
   }
-   let join = [...div].join(``)
-    boxes.innerHTML = join;
+   let markup = div.join(``)
+    boxes.innerHTML = markup;
 }
 function destroyBoxes(evt){
   boxes.innerHTML = ``;

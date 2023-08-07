@@ -8,8 +8,7 @@ items.forEach(function(list) {
     elements.push(list.lastElementChild.children.length);
    
 })
-
-let message = `Number of categories: ${list.children.length}
+console.log(`Number of categories: ${list.children.length}
 
 Category: ${category[0]}
 Elements: ${elements[0]}
@@ -18,5 +17,4 @@ Category: ${category[1]}
 Elements: ${elements[1]}
 
 Category: ${category[2]}
-Elements: ${elements[2]}`
-console.log(message)
+Elements: ${elements[2]}`)

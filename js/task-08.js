@@ -10,7 +10,7 @@ function checkForm(evt) {
     } else if (password.value === ``) {
         alert `Eror password`
     } else {
-        console.log(`Email ${email.value}, Password ${password.value}`)
+        console.log({ Email: email.value, Password: password.value })
         form.reset();
     }
     
